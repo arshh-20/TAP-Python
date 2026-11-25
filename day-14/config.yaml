@@ -1,0 +1,52 @@
+paths:
+  data_folder: ../data
+  log_folder: logs
+  bad_records_file: ../bad_records.csv
+  clean_csv_file: output/clean_data.csv
+  clean_json_file: output/clean_data.json
+  run_summary_file: output/run_summary.json
+  manifest_file: output/manifest.json
+
+rejection_limit: 0.20
+
+allowed_status:
+  - created
+  - approved
+  - invoiced
+  - processing
+  - shipped
+  - delivered
+  - unavailable
+  - canceled
+
+required_fields:
+  olist_customers_dataset.csv:
+    - customer_id
+    - customer_unique_id
+    - customer_zip_code_prefix
+    - customer_city
+    - customer_state
+  olist_geolocation_dataset.csv:
+    - geolocation_zip_code_prefix
+    - geolocation_lat
+    - geolocation_lng
+    - geolocation_city
+    - geolocation_state
+  olist_order_items_dataset.csv:
+    - order_id
+    - order_item_id
+    - product_id
+    - seller_id
+    - shipping_limit_date
+    - price
+    - freight_value
+  olist_orders_dataset.csv:
+    - order_id
+    - customer_id
+    - order_status
+    - order_purchase_timestamp
+  olist_sellers_dataset.csv:
+    - seller_id
+    - seller_zip_code_prefix
+    - seller_city
+    - seller_state
