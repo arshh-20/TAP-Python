@@ -2,3 +2,8 @@ __pycache__/
 *.py[cod]
 .venv/
 data/
+.ruff_cache/
+.pytest_cache/
+day-14/logs/
+day-14/output/
+bad_records.csv
