@@ -60,7 +60,7 @@ def calculate_order_totals(rows: list[dict[str, object]]) -> dict[str, float]:
     for row in rows:
         order_id = row["order_id"]
         if not isinstance(order_id, str):
-            raise ValueError("order_id must be a string")
+            raise TypeError("order_id must be a string")
         total = totals.get(order_id, 0.0) + float(row["price"]) + float(row["freight"])
         totals[order_id] = round(total, 2)
     return totals

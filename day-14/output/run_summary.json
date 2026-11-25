@@ -1,0 +1,40 @@
+{
+  "counts": {
+    "total": 100,
+    "valid": 68,
+    "rejected": 32
+  },
+  "duration_seconds": 0.02,
+  "files": [
+    {
+      "file": "olist_customers_dataset.csv",
+      "total": 20,
+      "valid": 13,
+      "rejected": 7
+    },
+    {
+      "file": "olist_geolocation_dataset.csv",
+      "total": 20,
+      "valid": 16,
+      "rejected": 4
+    },
+    {
+      "file": "olist_order_items_dataset.csv",
+      "total": 20,
+      "valid": 11,
+      "rejected": 9
+    },
+    {
+      "file": "olist_orders_dataset.csv",
+      "total": 20,
+      "valid": 14,
+      "rejected": 6
+    },
+    {
+      "file": "olist_sellers_dataset.csv",
+      "total": 20,
+      "valid": 14,
+      "rejected": 6
+    }
+  ]
+}
