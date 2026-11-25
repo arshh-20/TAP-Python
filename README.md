@@ -27,5 +27,5 @@ jupyter notebook
 
 In the Jupyter page, open the notebook you want to run and run its cells from top to bottom. If prompted to select a kernel, choose the Python environment created in `.venv`.
 
-Notebooks are in the project folder and in the `day-12`, `day-14`, and `day-15` folders. Some exercises use the CSV files in `data`, so keep that folder in place.
+Notebooks are in the project folder and in the `day-11`, `day-12`, `day-13`, `day-14`, and `day-15` folders. Some exercises use the CSV files in `data`, so keep that folder in place.
 
