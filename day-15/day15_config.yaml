@@ -1,0 +1,69 @@
+column_mapping:
+  order_item_id: item_id
+  shipping_limit_date: shipping_limit_at
+  freight_value: freight
+  order_status: status
+  order_purchase_timestamp: purchased_at
+  order_approved_at: approved_at
+  order_delivered_carrier_date: carrier_delivered_at
+  order_delivered_customer_date: customer_delivered_at
+  order_estimated_delivery_date: estimated_delivery_at
+
+bad_records_file: bad_records.csv
+log_folder: day-15/logs
+manifest_file: day-15/manifest.json
+
+required_columns:
+  olist_customers_dataset:
+    - customer_id
+    - customer_unique_id
+    - customer_zip_code_prefix
+    - customer_city
+    - customer_state
+  olist_customers_semicolon:
+    - customer_id
+    - customer_unique_id
+    - customer_zip_code_prefix
+    - customer_city
+    - customer_state
+  olist_geolocation_dataset:
+    - geolocation_zip_code_prefix
+    - geolocation_lat
+    - geolocation_lng
+    - geolocation_city
+    - geolocation_state
+  olist_order_items_dataset:
+    - order_id
+    - item_id
+    - product_id
+    - seller_id
+    - shipping_limit_at
+    - price
+    - freight
+  olist_order_payments_dataset:
+    - order_id
+    - payment_sequential
+    - payment_type
+    - payment_installments
+    - payment_value
+  olist_order_reviews_dataset:
+    - review_id
+    - order_id
+    - review_score
+    - review_creation_date
+    - review_answer_timestamp
+  olist_orders_dataset:
+    - order_id
+    - customer_id
+    - status
+    - purchased_at
+  olist_products_dataset:
+    - product_id
+  olist_sellers_dataset:
+    - seller_id
+    - seller_zip_code_prefix
+    - seller_city
+    - seller_state
+  product_category_name_translation:
+    - product_category_name
+    - product_category_name_english

@@ -6,4 +6,7 @@ data/
 .pytest_cache/
 day-14/logs/
 day-14/output/
+day-15/logs/
+day-15/bad_records.csv
+day-15/manifest.json
 bad_records.csv
